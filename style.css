@@ -38,6 +38,9 @@ body{
     max-width: 57.5rem;
     height: 31.25rem;
     grid-template-columns: repeat(3, 1fr);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    
 }
 .section_container{
     display: grid;

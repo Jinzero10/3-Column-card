@@ -6,9 +6,8 @@
     margin: 0;
     display: grid;
     max-width: 40rem;
-    max-height: 31.25rem !important;
+    height: auto;
     grid-template-columns: 1fr;
-
     }
     .section_container {
         display: grid;
