@@ -30,6 +30,7 @@ body{
     place-items: center;
     font-family: var(--ff-lexend-deca);
     padding: 70px 0;
+    background-color: var(--Very-light-gray);
 }
 .container{
     margin: 0;
