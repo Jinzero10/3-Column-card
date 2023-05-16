@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    /*Primary*/
+
+--Bright-orange: hsl(31, 77%, 52%);/*first card background*/
+--Dark-cyan: hsl(184, 100%, 22%);/*second card background*/
+--Very-dark-cyan: hsl(179, 100%, 13%);/*third card background*/
+
+    /*Neutral*/
+
+--Transparent-white: hsla(0, 0%, 100%, 0.75); /*paragraphs*/
+--Very-light-gray: hsl(0, 0%, 95%); /*background, headings, buttons*/
+
+--ff-big-shoulders: 'Big Shoulders Display', cursive;
+--ff-lexend-deca: 'Lexend Deca', sans-serif;
+
+--fw-regular: 400;
+--fw-bold: 700;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+body{
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    font-family: var(--ff-lexend-deca);
+    padding: 70px 0;
+}
+.container{
+    margin: 0;
+    display: grid;
+    max-width: 57.5rem;
+    height: 31.25rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+.section_container{
+    display: grid;
+    align-items: center;
+    grid-template-rows: 75px 42px 1fr 45px;
+    padding: 2.4rem;
+}
+section img {
+    margin-top: -2.5rem;
+}
+.section_heading{
+    text-transform: uppercase;
+    font-family: var(--ff-big-shoulders);
+    font-weight: var(--fw-bold);
+    font-size: 2.5rem;
+    color: var(--Very-light-gray);
+}
+.section_parag{
+    font-weight: var(--fw-regular);
+    line-height: 1.6rem;
+    color: var(--Transparent-white);
+}
+.action_btn{
+    padding: 1rem;
+    border-radius: 50px;
+    border: 0;
+    max-width: 9.2rem;
+    text-align: center;
+    font-weight: var(--fw-bold);
+    color: var(--Very-light-gray);
+}
+.section_container:nth-child(1){
+    background-color: var(--Bright-orange);
+}
+.section_container:nth-child(2){
+    background-color: var(--Dark-cyan);
+}
+.section_container:nth-child(3){
+    background-color: var(--Very-dark-cyan);
+}
+.section_container:nth-child(1) >
+.action_btn{
+    color: var(--Bright-orange);
+}
+.section_container:nth-child(2) >
+.action_btn{
+    color: var(--Dark-cyan);
+}
+.section_container:nth-child(3) >
+.action_btn{
+    color: var(--Very-dark-cyan);
+}
+.action_btn:hover{
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid var(--Very-light-gray);
+    color: var(--Very-light-gray) !important;
+}
